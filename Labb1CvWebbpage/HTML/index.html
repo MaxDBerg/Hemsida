@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is a new website" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/navbar.css" />
+    <link rel="stylesheet" href="/CSS/ModalCSS.css" />
+    <link rel="stylesheet" href="/CSS/General.css" />
+    <link rel="stylesheet" href="/CSS/Footer.css" />
+    <title>First Website</title>
+  </head>
+  <body>
+    <header>
+      <div class="mainHeader">
+        <h1>Max Dahlberg's Website</h1>
+      </div>
+      <nav>
+        <div class="navbar">
+          <a class="active" href="index.html">Home</a>
+          <div class="subnav">
+            <button class="navbarbtn">
+              Projects <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="subnav-content">
+              <a href="#modalBankApp">BankApp</a>
+              <a href="#modalDatabaseProject">Database Project</a>
+              <a href="#modalKiwiBank">KiwiBank</a>
+            </div>
+          </div>
+          <a href="page2.html">Lorum</a>
+          <a href="page3.html">About me</a>
+          <a href="page4.html">Contact me</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <section class="homeArticles">
+          <div>
+            <h3>My Super janky website</h3>
+            <p>
+              Once upon a time, there was a website that was both super cool and
+              kinda janky. It was a place where people could come to explore all
+              sorts of interesting topics and connect with others who shared
+              their passions. The site was filled with all sorts of great
+              content, from informative articles to fun quizzes and games, and
+              it quickly became a popular destination for people from all over
+              the world.
+            </p>
+            <p>
+              Despite its popularity, however, the website was far from perfect.
+              It had a few glitches here and there, and sometimes pages would
+              load slowly or not at all. But despite these issues, people still
+              loved the site and kept coming back day after day.
+            </p>
+            <p>
+              As time went on, the website's creators worked hard to improve its
+              functionality and fix the bugs that were causing problems. They
+              listened carefully to feedback from their users and worked
+              tirelessly to make the site better and more user-friendly.
+            </p>
+            <p>
+              And eventually, their hard work paid off. The website became
+              smoother, faster, and more intuitive than ever before. It was
+              still super cool, of course, but now it was also sleek and
+              polished, with none of the janky quirks that had plagued it in the
+              past.
+            </p>
+            <p>
+              People continued to flock to the site in droves, impressed by its
+              combination of quality content and top-notch user experience. And
+              even though it had started out a little rough around the edges,
+              the website had become one of the most popular and beloved
+              destinations on the entire internet.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="md-modal" id="modalKiwiBank">
+            <div class="md-content">
+              <h3>KiwiBankomaten</h3>
+              <div>
+                <img
+                  class="modalImage"
+                  src="/Images/KiwibankomatenMainMenu.png"
+                  alt="Kiwibankomaten's Main menu"
+                />
+
+                <p>
+                  Kiwibankomaten is a versatile bank app that offers a wide
+                  range of functions for both users and administrators. It
+                  allows users to manage their bank accounts and loans with
+                  ease, view account history, transfer money, and see the
+                  available amount for loaning from the bank. Users can also
+                  create new accounts and choose their preferred currency. The
+                  app's ability to convert transfers between different
+                  currencies at the current exchange rate adds to its
+                  versatility. On the other hand, administrators can manage the
+                  app more efficiently by creating new users, updating
+                  currencies, and editing account types. The program's security
+                  measures ensure that users' data is protected by limiting
+                  login attempts and blocking access after three unsuccessful
+                  tries. The program's use of local text files as a database
+                  makes it easier for administrators to save and access data
+                  between program runs. Overall, Kiwibankomaten is a
+                  user-friendly and secure bank app that provides a seamless
+                  banking experience for both users and administrators. Its
+                  versatility and aesthetic design make it an excellent choice
+                  for anyone looking to manage their bank accounts and loans
+                  conveniently.
+                </p>
+                <a
+                  id="learnMore"
+                  class="md-close"
+                  href="https://github.com/Nomijah/KiwiBankomaten"
+                  target="_blank"
+                  >Learn More!</a
+                >
+                <a id="closeModal" class="md-close" href="#">Close me!</a>
+              </div>
+            </div>
+          </div>
+          <div class="md-modal" id="modalDatabaseProject">
+            <div class="md-content">
+              <h3>Database Project</h3>
+              <div>
+                <img class="modalImage" src="/Images/zibrg0i7.bmp" alt="DatabaseProject" />
+                <p>
+                  The Labb3Databas project is a database application that is
+                  designed to manage student and staff data for a school. The
+                  application is written in C# and uses the Entity Framework to
+                  interact with a database. The application provides a
+                  command-line interface to allow users to perform various
+                  tasks, such as adding new staff members or retrieving a list
+                  of students in a particular class. The application also allows
+                  users to sort the list of students based on either their first
+                  name or last name in ascending or descending order. The
+                  project provides a starting point for a school administration
+                  system that can be further developed and customized to meet
+                  specific school needs.
+                </p>
+                <a
+                  id="learnMore"
+                  class="md-close"
+                  href="https://github.com/MaxDBerg/Labb3Databas"
+                  target="_blank"
+                  >Learn More!</a
+                >
+                <a class="md-close" href="#">Close me!</a>
+              </div>
+            </div>
+          </div>
+          <div class="md-modal" id="modalBankApp">
+            <div class="md-content">
+              <h3>Simple Console Bank App</h3>
+              <div>
+                <img
+                  class="modalImage"
+                  src="/Images/lqhg7ibp.bmp"
+                  alt="BankApp"
+                />
+                <p>
+                  This is a simplified bank app that has fewer features than the
+                  previous one. It has a simple menu with four options: view
+                  account balance, transfer funds, withdraw money, and log out.
+                  To use the app, a user needs to log in by entering their
+                  username and password. The app then gives the user three
+                  chances to log in before terminating. Once the user logs in,
+                  they are presented with the main menu. Option 1 on the menu
+                  allows the user to view their account balance. This option
+                  prompts the user to enter their username and password and then
+                  displays their account balance. Option 2 allows the user to
+                  transfer funds between their accounts. This option prompts the
+                  user to enter their username and password, then displays a
+                  list of their accounts with their current balances. The user
+                  can select the account to transfer funds from and the account
+                  to transfer funds to, then enter the amount to transfer.
+                  Option 3 allows the user to withdraw money from their account.
+                  This option prompts the user to enter their username and
+                  password and then displays a list of their accounts with their
+                  current balances. The user can select the account to withdraw
+                  money from and enter the amount to withdraw. Option 4 allows
+                  the user to log out of the app. If the user inputs an invalid
+                  menu option, the app displays a message prompting the user to
+                  input a valid option. The app also forces the user to press
+                  Enter to return to the main menu after completing an action.
+                </p>
+                <a
+                  id="learnMore"
+                  class="md-close"
+                  href="https://github.com/MaxDBerg/InternetBank-Main"
+                  target="_blank"
+                  >Learn More!</a
+                >
+                <a class="md-close" href="#">Close me!</a>
+              </div>
+            </div>
+          </div>
+          <div class="md-overlay" id="modalBankApp"></div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p id="rightsReserved">© Max Dahlberg 2023. All rights reserved.</p>
+      <p id="designedDeveloped">Designed and developed by Max Dahlberg</p>
+    </footer>
+    <!-- Comments are cool :O -->
+  </body>
+</html>

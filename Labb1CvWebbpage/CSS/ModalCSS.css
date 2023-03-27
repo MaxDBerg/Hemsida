@@ -1,0 +1,96 @@
+.md-modal {
+	position: fixed;
+    top: 50%;
+    left: 50%;
+	width: 80%;
+	height: 90%;
+    transform: translate(-50%, -50%);
+    max-width: 750px;
+	min-width: 400px;
+	z-index: 2000;
+	display: none;
+}
+
+.md-modal:target {
+	display: block;
+}
+
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: #b8b0b0c5;
+}
+
+.md-modal:target ~ .md-overlay {
+	opacity: 100%;
+	display: block;
+}
+
+/* Content styles */
+.md-content {
+	color: #B46060;
+	background: #FBF0F0;
+	position: relative;
+	border-radius: 3px;
+	margin: 0 auto;
+	border: 3px solid #B46060;
+	height: 900px; /* Set a fixed height for the modal content */
+        overflow-y: auto; /* Add a scrollbar to the modal content */
+}
+
+.md-content h3 {
+	color: #B46060;
+	margin: 0;
+	padding: 0.4em;
+	text-align: center;
+	font-size: 2.4em;
+	background: #DFD3D3;
+	border-radius: 3px 3px 0 0;
+}
+
+.md-content > div {
+	padding: 15px 40px 60px;
+	margin: 0;
+	font-weight: 300;
+	font-size: 1.15em;
+}
+
+.md-content > div p {
+	margin: 0;
+	padding: 20px 10px;
+}
+
+.md-content > div ul {
+	margin: 0;
+	padding: 0 0 30px 20px;
+}
+
+.md-content > div ul li {
+	padding: 5px 0;
+}
+
+.md-content a {
+	font-size: 0.8em;
+	background-color: #B46060;
+	max-width: 90px;
+	min-width: 90px;
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+	border-radius: 3px;
+	margin-right: 20px;
+	float: right;
+	bottom: 5%;
+}
+
+.modalImage{
+	width: 80%;
+	margin: auto;
+	display: block;
+}
